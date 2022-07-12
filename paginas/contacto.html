@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto| MIC Construcciones</title>
     <link rel="shortcut icon" href="../imagenes/logomic2.png" />
-    <link rel="stylesheet" href="../css/estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 
 <body>
@@ -30,51 +33,24 @@
                         Contacto</a>
                 </li>
             </ul>
+            <span><i class="bi bi-list span"></i></span>
         </nav>
     </header>
     <main class="main">
         <section class="main__texto">
             <div>
-                <h1>Contacto</h1>
+                <h2>Contacto</h2>
                 <p>Por favor, ingrese sus datos y su consulta, lo contactaremos a la brevedad.</p>
             </div>
         </section>
         <section class="main__formularios">
-            <div></div>
             <form action="" method="" enctype="">
-                <div class="form__label">
-                    <label for="name">Nombre y apellido:</label>
-                    <input type="text" id="name" name="Nombre" placeholder="Nombre..." class="input" />
-                </div>
-                <div class="form__label">
-                    <label for="email" class="form__label">Correo electronico:</label>
-                    <input type="email" name="email" id="email" placeholder="correo@correo.com" class="input" />
-                </div>
-                <div class="form__label">
-                    <label for="telefono" class="form__label">Telefono:</label>
-                    <input type="number" name="telefono" id="telefono" placeholder="(Cod. Area)12345678"
-                        class="input" />
-                </div>
-                <div class="form__label">
-                    <label for="consulta" class="form__label">Ingrese su consulta:</label>
-                    <textarea name="consulta" id="consulta" cols="30" rows="10"
-                        placeholder="Escriba su mensaje aquí..."></textarea>
-                </div>
-                <div class="form__label">
-                    <fieldset class="contacto__via">
-                        <legend>Deseo que me contacten via...</legend>
-                        <label for="mail">Email</label>
-                        <input type="radio" id="mail" name="contacto" />
-                        <label for="whatsapp">Whatsapp</label>
-                        <input type="radio" id="whatsapp" name="contacto" />
-                        <label for="llamado">Llamado telefonico</label>
-                        <input type="radio" id="llamado" name="contacto" class="input" />
-                    </fieldset>
-                </div>
-                <div class="form__label">
-                    <button type="submit" class="button">Enviar</button>
-                    <button type="reset" class="button">Limpiar</button>
-                </div>
+                <input type="text" id="name" name="Nombre" placeholder="Nombre y Apellido" class="input" />
+                <input type="email" name="email" id="email" placeholder="correo@correo.com" class="input" />
+                <input type="number" name="telefono" id="telefono" placeholder="(Cod. Area)12345678" class="input" />
+                <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escriba su mensaje aquí..." class="input"></textarea>
+                <button type="submit" class="button">Enviar</button>
+
             </form>
         </section>
     </main>
@@ -95,18 +71,21 @@
             </li>
         </div>
         <div>
-            <ul>
-                <li> <a href="https://www.instagram.com/construccionesmic/">
-                        Seguinos en Instagram
-                    </a></li>
-                <li> <a href="https://twitter.com/micconstruccion">
-                        Seguinos en Twitter
-                    </a></li>
-                <li> <a href="https://es-la.facebook.com/construccionesmic/">
-                        Seguinos en Facebook
-                    </a>
-            </ul>
-            </li>
+            <h4>Redes Sociales</h4>
+            <div class="rrss">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/construccionesmic/">
+                        <i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/micconstruccion"><i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://es-la.facebook.com/construccionesmic/">
+                        <i class="bi bi-facebook"></i> </a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

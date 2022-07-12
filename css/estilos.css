@@ -14,7 +14,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-a {
+a { color: #fff;
     text-decoration: none;
 }
 
@@ -36,10 +36,9 @@ header {
     display: flex;
     height: 7rem;
     background-image: linear-gradient(160deg, rgb(12, 12, 59), #000);
-transition: trasnform 0.5s;
 }
 
-header ul li:hover {transform: translateY(-20px);}
+header ul li:hover {transform: scale(1.3);}
 /* para tablet y cel, poner flex direction columns */
 .header__content {
     display: flex;
@@ -58,7 +57,7 @@ header ul {
 }
 
 header ul li {
-    padding: 10px;
+    padding: 15px;
 }
 
 header ul li a {
@@ -72,75 +71,33 @@ header ul li a {
     background-color: rgb(12, 12, 59);
     height: 100%;
 }
+.main h2 { text-decoration: underline;}
 
-.main__principal {
-    padding: 30px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.main__principal h2 {
-    text-decoration: underline;
-    line-height: 1.5;
-}
-
-
-.grid__principal--item {
-    width: 50%;
-}
+.hero {padding-bottom: 40px;
+font-size: 20px;}
 
 .main__novedades {
+    background-color: blanchedalmond;
     display: grid;
     grid-template-columns: repeat(3, 1 fr);
+    padding-bottom: 40px;
 }
 
 .main__novedades h2 {
-    text-align: center;
-    text-decoration: underline;
-    padding-bottom: 15px;
+text-align: center;
+text-decoration: underline;
+padding-top: 25px;
+color: rgb(12, 12,59);
 }
-
-.main__novedades a {
-    color: #fff;
+.card {border: solid;
+    border-color: rgb(12, 12, 59);
+    border-radius: 5px;}
+.card__bg {
+    background-color: blanchedalmond;
 }
-
-.novedades__div {
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-}
-
-.card {
-    background-color: rgb(88, 88, 207);
-    margin: 10px 50px;
-    text-align: center;
-    border-radius: 10px;
-    width: 80%;
-    transition: transformn 0.5s;
-}
-
-.card:hover {
-transform: scale(1.1);
-}
-
-.card a img {
-    width: 100%;
-    height: 50%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding-top: 10px;
-}
-
-.card__p {
-    text-align: center;
-    padding: 10px;
-}
-
-.card__h3 {
-    color: rgb(12, 12, 59);
-    text-decoration: underline;
-    font-weight: bold;
-}
+.card__color {
+    color: rgb(12, 12, 59);}
+.card-prueba { padding-bottom: 16px;}
 
 /* para contacto.html */
 
@@ -149,46 +106,51 @@ transform: scale(1.1);
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
-
+    font-size: 20px;
 }
 
 .main__formularios {
-    width: 100%;
-    height: 300px;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-.form__label {
+    width: 500px;
+    height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-items: center;
+    padding-top: 20px;
+    margin: auto;
 }
 
 .input {
-    width: 235px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
 .button {
     color: #000;
+    font-size: 30px;
 }
+.button:hover {
+    transform: scale(1.3);
+    }
 
 
 /* para quienes-somos.html */
-
-.main__equipo h1 {
-    text-align: center;
-    text-decoration: underline;
-}
 
 .main__equipo {
     padding: 30px 100px;
     color: blanchedalmond;
     background-color: rgb(12, 12, 59);
 }
+.main__equipo h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main__equipo p { padding-top: 20px;
+font-size: 20px;}
 
 .equipo__img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -200,14 +162,15 @@ transform: scale(1.1);
     text-align: left;
     align-self: center;
     list-style: square;
+    font-size: 20px;
 }
 
 /* para nuestros-trabajos.html */
 
-.main h1 {
+.main h2 {
     text-align: center;
     text-decoration: underline;
-    padding-bottom: 20px;
+    font-size: 30px;
 }
 
 .main__cards {
@@ -221,7 +184,7 @@ transform: scale(1.1);
 .card__small {
     background-color: rgb(88, 88, 207);
     width: 70%;
-    height: 410px;
+    height: 90%;
     border-radius: 10px;
     padding: 10px;
     transition: transformn 0.5s;
@@ -263,21 +226,23 @@ transform: scale(1.1);
 
 .main__text {
     padding: 30px 100px;
-    height: 310px;
+    height: 600px;
 }
 
-
 /* footer */
-
 .footer {
     background-image: linear-gradient(160deg, #000, rgb(12, 12, 59));
     font-weight: bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 20px;
-    height: 100px;
     list-style-type: none;
 }
+
+.rrss {font-size: 20px;
+display: flex;
+justify-content: space-evenly;}
+
 
 /* media quering*/
 
@@ -287,36 +252,15 @@ transform: scale(1.1);
         padding-top: 50px;
     }
 
-    .main__principal {
-        padding: 60px;
-        display: flex;
-        justify-content: center;
-    }
-
-    main h2 {
-        display: flex;
-        text-align: center;
-    }
-
-    .grid__principal--item {
-        width: 80%;
-    }
-
-    main iframe {
-        display: none;
-    }
-
-    .main__novedades a h2 {
-        flex-direction: column;
-        text-align: center;
-        text-decoration: underline;
-        padding-bottom: 15px;
-    }
-
     .main__text {
         padding: 60px 100px;
     }
 
+    .main__texto h2{text-align: center;
+    padding: 15px; }
+    .main__equipo h2 {
+        padding-top: 10px;
+    }
     .main__cards {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 450px);
@@ -327,12 +271,13 @@ transform: scale(1.1);
         margin: 10px 10px;
         text-align: center;
         font-size: 0.8rem;
-        border-radius: 10px;
-        width: 95%;
+        width: 100%;
     }
 }
 
-@media screen and (max-width:375px) {
+
+@media screen and (max-width:425px) {
+
     .header__content nav ul {
         display: none
     }
@@ -347,6 +292,7 @@ transform: scale(1.1);
         justify-content: center;
         font-size: 14px;
     }
+    .span { font-size: 30px;}
 
     .footer {
         font-size: 13px;
@@ -354,24 +300,35 @@ transform: scale(1.1);
         height: 120px;
     }
 
-    .footer div span {
-        display: inline-block;
+    .footer ul {
+      font-size: 15px;
     }
 
-    .footer div ul {
-        display: none;
-    }
-
+    .footer h4 {display: none;}
     .main__text {
         font-size: 15px;
         padding: 60px 45px;
         height: 310px;
     }
-
+    .main__texto p {
+        padding: 0px 40px;
+        font-size: 15px;
+    }
+    .main__formularios {
+        width: 80%;
+        height: 90%;
+        padding-bottom: 20px;
+    }
+    .input {font-size: 15px;}
+    
     .main__equipo {
         padding: 35px 20px;
     }
-
+    .main__equipo p {font-size: 15px;}
+    
+    .card__small {height: 97%;
+    width: 85%;}
+    
     .main__cards {
         flex-wrap: wrap;
         grid-template-columns: 1fr;
@@ -383,8 +340,4 @@ transform: scale(1.1);
         flex-wrap: wrap;
     }
 
-    .card {
-        width: 95%;
-        margin: 100px;
-    }
-}
+} 
