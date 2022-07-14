@@ -1,0 +1,33 @@
+.main {
+    background-color: rgb(12, 12, 59);
+    height: 100%;
+    h2 { text-decoration:underline ;}
+
+    &__hero {padding-bottom: 40px;
+        font-size: 20px;};
+
+    &__novedades {
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-columns: repeat(3, 1 fr);
+        padding-bottom: 40px;
+    
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            padding-top: 25px;
+            color: rgb(12, 12,59);
+            }
+    }        
+}
+
+.card {border: solid;
+    border-color: rgb(12, 12, 59);
+    border-radius: 5px;
+
+    &__bg {background-color: blanchedalmond;}
+
+    &__color {color: rgb(12, 12, 59)}
+
+    &-prueba { padding-bottom: 16px;}
+}

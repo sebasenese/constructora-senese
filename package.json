@@ -1,0 +1,14 @@
+{
+  "name": "constructora-senese",
+  "version": "1.0.0",
+  "description": "agregando sass al proyecto",
+  "main": "index.js",
+  "scripts": {
+  "build": "node-sass --include-path sass sass/index.scss css/style.css -w"
+  },
+  "author": "Sebastian Senese",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: AlegreyaSC;
+  src: url(../fonts/AlegreyaSC-ExtraBoldItalic-LOGO.ttf); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: blanchedalmond; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+p {
+  line-height: 1.5; }
+
+ul {
+  list-style-type: none; }
+
+span {
+  display: none; }
+
+header {
+  display: flex;
+  justify-content: space-around;
+  height: 7rem;
+  background-image: linear-gradient(160deg, #0c0c3b, #000); }
+  header h1 {
+    font-family: AlegreyaSC;
+    display: flex;
+    font-size: 2.5rem; }
+  header ul {
+    display: flex; }
+  header li {
+    padding: 15px; }
+    header li:hover {
+      transform: scale(1.3); }
+  header a {
+    text-decoration: underline; }
+
+.main {
+  background-color: #0c0c3b;
+  height: 100%; }
+  .main h2 {
+    text-decoration: underline; }
+
+.hero {
+  padding-bottom: 40px;
+  font-size: 20px; }
+
+.main__novedades {
+  background-color: blanchedalmond;
+  display: grid;
+  grid-template-columns: repeat(3, 1 fr);
+  padding-bottom: 40px; }
+  .main__novedades h2 {
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 25px;
+    color: #0c0c3b; }
+
+.card {
+  border: solid;
+  border-color: #0c0c3b;
+  border-radius: 5px; }
+
+.card__bg {
+  background-color: blanchedalmond; }
+
+.card__color {
+  color: #0c0c3b; }
+
+.card-prueba {
+  padding-bottom: 16px; }
+
+.footer {
+  background-image: linear-gradient(160deg, #000, #0c0c3b);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  list-style-type: none; }
+  .footer__rrss {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly; }

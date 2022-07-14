@@ -1,0 +1,30 @@
+@font-face {
+    font-family: AlegreyaSC;
+    src: url(../fonts/AlegreyaSC-ExtraBoldItalic-LOGO.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: blanchedalmond;}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a { color: #fff;
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+span {
+    display: none;
+}
