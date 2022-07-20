@@ -1,34 +1,41 @@
 .main {
-    background-color: rgb(12, 12, 59);
+    background-color: $colorBlue;
     height: 100%;
     padding-bottom: 30px;
-    h2 { text-decoration:underline ;}
+    h2 { text-decoration: $underline ;}
 
-    &__hero {padding-bottom: 40px;
+    .hero {padding-bottom: 40px;
         font-size: 20px;};
 
     &__novedades {
-        background-color: blanchedalmond;
+        background-color: $colorBlanque;
         display: grid;
         grid-template-columns: repeat(3, 1 fr);
         padding-bottom: 40px;
     
         h2 {
             text-align: center;
-            text-decoration: underline;
+            text-decoration: $underline;
             padding-top: 25px;
-            color: rgb(12, 12,59);
+            color: $colorBlue;
             }
     }        
 }
 
+//EXTEND//
+
+.hero-extend {@extend .hero;
+    font-weight: bold;
+    
+}
+
 .card {border: solid;
-    border-color: rgb(12, 12, 59);
+    border-color: $colorBlue;
     border-radius: 5px;
 
-    &__bg {background-color: blanchedalmond;}
+    &__bg {background-color: $colorBlanque;}
 
-    &__color {color: rgb(12, 12, 59)}
+    &__color {color: $colorBlue}
 
     &-prueba { padding-bottom: 16px;}
 }
