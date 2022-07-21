@@ -44,38 +44,49 @@ header {
 
 .main {
   background-color: #0c0c3b;
-  height: 100%; }
-  .main h2 {
+  height: 100%;
+  padding-bottom: 30px;
+  font-weight: bold; }
+  .main .titulos, .main .titulosExtend {
     text-decoration: underline; }
+  .main .hero {
+    padding-bottom: 40px;
+    font-size: 20px; }
+  .main__novedades {
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1 fr);
+    padding-bottom: 40px; }
+    .main__novedades h2 {
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 25px;
+      color: #0c0c3b; }
 
-.hero {
-  padding-bottom: 40px;
-  font-size: 20px; }
-
-.main__novedades {
-  background-color: blanchedalmond;
-  display: grid;
-  grid-template-columns: repeat(3, 1 fr);
-  padding-bottom: 40px; }
-  .main__novedades h2 {
-    text-align: center;
-    text-decoration: underline;
-    padding-top: 25px;
-    color: #0c0c3b; }
+.titulosExtend {
+  font-weight: 400; }
 
 .card {
   border: solid;
   border-color: #0c0c3b;
   border-radius: 5px; }
+  .card p {
+    color: blanchedalmond; }
+  .card__bg {
+    background-color: blanchedalmond; }
+  .card__color {
+    color: #0c0c3b; }
+  .card-prueba {
+    padding-bottom: 16px; }
 
-.card__bg {
-  background-color: blanchedalmond; }
+.each-card1 {
+  background-color: #0c0c3b; }
 
-.card__color {
-  color: #0c0c3b; }
+.each-card2 {
+  background-color: #2020b9; }
 
-.card-prueba {
-  padding-bottom: 16px; }
+.each-card3 {
+  background-color: #4b4bf7; }
 
 .footer {
   background-image: linear-gradient(160deg, #000, #0c0c3b);

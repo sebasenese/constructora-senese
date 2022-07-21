@@ -2,7 +2,7 @@
     background-color: $colorBlue;
     height: 100%;
     padding-bottom: 30px;
-    h2 { text-decoration: $underline ;}
+    .titulos { text-decoration: $underline ;}
 
     .hero {padding-bottom: 40px;
         font-size: 20px;};
@@ -18,24 +18,38 @@
             text-decoration: $underline;
             padding-top: 25px;
             color: $colorBlue;
-            }
-    }        
-}
-
-//EXTEND//
-
-.hero-extend {@extend .hero;
+         }
+    }       
     font-weight: bold;
-    
+}  
+
+.titulosExtend { @extend .titulos;
+    font-weight: 400;
+
 }
 
 .card {border: solid;
     border-color: $colorBlue;
     border-radius: 5px;
 
+    p {color: $colorBlanque;} 
+
     &__bg {background-color: $colorBlanque;}
 
     &__color {color: $colorBlue}
 
     &-prueba { padding-bottom: 16px;}
+
+}
+
+$cards: (
+    card1: #0c0c3b,
+    card2: #2020b9,
+    card3: #4b4bf7,
+);
+
+@each $nombre, $fondos in $cards {
+    .each-#{$nombre} {
+        background-color: $fondos;
+    }
 }
