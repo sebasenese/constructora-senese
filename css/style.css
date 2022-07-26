@@ -214,7 +214,11 @@ header {
     margin: 10px 10px;
     text-align: center;
     font-size: 0.8rem;
-    width: 100%; } }
+    width: 100%; }
+  .equipo__img img {
+    width: 100%; }
+  .equipo__img ul {
+    display: none; } }
 
 @media screen and (max-width: 425px) {
   .header__tittle {
@@ -225,7 +229,7 @@ header {
     font-size: 14px;
     text-decoration: none; }
   .titulos {
-    font-size: 24px; }
+    font-size: 25px; }
   .main__principal {
     padding: 60px 10px 20px 10px;
     display: flex;

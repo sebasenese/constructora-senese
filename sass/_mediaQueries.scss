@@ -28,6 +28,9 @@
         font-size: 0.8rem;
         width: 100%;
     }
+    .equipo__img img { width: 100%;}
+
+    .equipo__img ul{ display: none;}
 }
 
 
@@ -41,8 +44,8 @@
        font-size: 14px;
        text-decoration: none;
        }
-       
-    .titulos { font-size: 24px;}
+
+    .titulos { font-size: 25px;}
 
     .main__principal {
         padding: 60px 10px 20px 10px;
@@ -96,4 +99,5 @@
     .novedades__div {
         flex-wrap: wrap;
     }
+    .button {font-size: 15px;}
 }
